@@ -60,6 +60,12 @@
             this.euler = new System.Windows.Forms.Button();
             this.pi = new System.Windows.Forms.Button();
             this.limpiar = new System.Windows.Forms.Button();
+            this.menuStrip1 = new System.Windows.Forms.MenuStrip();
+            this.integralesToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
+            this.integralDiscretaToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
+            this.ecuacionesToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
+            this.ecuacionesDeSegundoGradoToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
+            this.menuStrip1.SuspendLayout();
             this.SuspendLayout();
             // 
             // pantalla
@@ -380,6 +386,7 @@
             this.potencia.TabIndex = 30;
             this.potencia.Text = "^";
             this.potencia.UseVisualStyleBackColor = true;
+            this.potencia.Click += new System.EventHandler(this.potencia_Click);
             // 
             // euler
             // 
@@ -413,6 +420,47 @@
             this.limpiar.Text = "AC";
             this.limpiar.UseVisualStyleBackColor = true;
             this.limpiar.Click += new System.EventHandler(this.limpiar_Click);
+            // 
+            // menuStrip1
+            // 
+            this.menuStrip1.Items.AddRange(new System.Windows.Forms.ToolStripItem[] {
+            this.integralesToolStripMenuItem,
+            this.ecuacionesToolStripMenuItem});
+            this.menuStrip1.Location = new System.Drawing.Point(0, 0);
+            this.menuStrip1.Name = "menuStrip1";
+            this.menuStrip1.Size = new System.Drawing.Size(800, 24);
+            this.menuStrip1.TabIndex = 34;
+            this.menuStrip1.Text = "menuStrip1";
+            // 
+            // integralesToolStripMenuItem
+            // 
+            this.integralesToolStripMenuItem.DropDownItems.AddRange(new System.Windows.Forms.ToolStripItem[] {
+            this.integralDiscretaToolStripMenuItem});
+            this.integralesToolStripMenuItem.Name = "integralesToolStripMenuItem";
+            this.integralesToolStripMenuItem.Size = new System.Drawing.Size(70, 20);
+            this.integralesToolStripMenuItem.Text = "Integrales";
+            // 
+            // integralDiscretaToolStripMenuItem
+            // 
+            this.integralDiscretaToolStripMenuItem.Name = "integralDiscretaToolStripMenuItem";
+            this.integralDiscretaToolStripMenuItem.Size = new System.Drawing.Size(180, 22);
+            this.integralDiscretaToolStripMenuItem.Text = "Curva de agnesi";
+            this.integralDiscretaToolStripMenuItem.Click += new System.EventHandler(this.integralDiscretaToolStripMenuItem_Click);
+            // 
+            // ecuacionesToolStripMenuItem
+            // 
+            this.ecuacionesToolStripMenuItem.DropDownItems.AddRange(new System.Windows.Forms.ToolStripItem[] {
+            this.ecuacionesDeSegundoGradoToolStripMenuItem});
+            this.ecuacionesToolStripMenuItem.Name = "ecuacionesToolStripMenuItem";
+            this.ecuacionesToolStripMenuItem.Size = new System.Drawing.Size(78, 20);
+            this.ecuacionesToolStripMenuItem.Text = "Ecuaciones";
+            // 
+            // ecuacionesDeSegundoGradoToolStripMenuItem
+            // 
+            this.ecuacionesDeSegundoGradoToolStripMenuItem.Name = "ecuacionesDeSegundoGradoToolStripMenuItem";
+            this.ecuacionesDeSegundoGradoToolStripMenuItem.Size = new System.Drawing.Size(234, 22);
+            this.ecuacionesDeSegundoGradoToolStripMenuItem.Text = "Ecuaciones de Segundo Grado";
+            this.ecuacionesDeSegundoGradoToolStripMenuItem.Click += new System.EventHandler(this.ecuacionesDeSegundoGradoToolStripMenuItem_Click);
             // 
             // Form1
             // 
@@ -451,8 +499,12 @@
             this.Controls.Add(this.Multiplicar);
             this.Controls.Add(this.Dividir);
             this.Controls.Add(this.pantalla);
+            this.Controls.Add(this.menuStrip1);
+            this.MainMenuStrip = this.menuStrip1;
             this.Name = "Form1";
             this.Text = "Calculadora";
+            this.menuStrip1.ResumeLayout(false);
+            this.menuStrip1.PerformLayout();
             this.ResumeLayout(false);
             this.PerformLayout();
 
@@ -492,5 +544,10 @@
         private Button euler;
         private Button pi;
         private Button limpiar;
+        private MenuStrip menuStrip1;
+        private ToolStripMenuItem integralesToolStripMenuItem;
+        private ToolStripMenuItem integralDiscretaToolStripMenuItem;
+        private ToolStripMenuItem ecuacionesToolStripMenuItem;
+        private ToolStripMenuItem ecuacionesDeSegundoGradoToolStripMenuItem;
     }
 }

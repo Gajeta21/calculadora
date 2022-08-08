@@ -15,3 +15,5 @@ C:\Users\Gabri\Desktop\Trabajo math\WinFormsApp1\WinFormsApp1\obj\Debug\net6.0-w
 C:\Users\Gabri\Desktop\Trabajo math\WinFormsApp1\WinFormsApp1\obj\Debug\net6.0-windows\WinFormsApp1.pdb
 C:\Users\Gabri\Desktop\Trabajo math\WinFormsApp1\WinFormsApp1\obj\Debug\net6.0-windows\WinFormsApp1.genruntimeconfig.cache
 C:\Users\Gabri\Desktop\Trabajo math\WinFormsApp1\WinFormsApp1\obj\Debug\net6.0-windows\ref\WinFormsApp1.dll
+C:\Users\Gabri\Desktop\Trabajo math\WinFormsApp1\WinFormsApp1\obj\Debug\net6.0-windows\WinFormsApp1.Form2.resources
+C:\Users\Gabri\Desktop\Trabajo math\WinFormsApp1\WinFormsApp1\obj\Debug\net6.0-windows\WinFormsApp1.Form3.resources

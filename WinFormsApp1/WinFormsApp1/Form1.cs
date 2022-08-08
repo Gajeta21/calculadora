@@ -7,6 +7,7 @@ namespace WinFormsApp1
         double valor2 = 0;
         double respuesta = 0;
         private int Op = 0;
+
         public Form1()
         {
             InitializeComponent();
@@ -220,6 +221,25 @@ namespace WinFormsApp1
             valor1 = Convert.ToDouble(pantalla.Text);
             pantalla.Text = Convert.ToString(Math.Log(valor1));
             
+        }
+
+        private void potencia_Click(object sender, EventArgs e)
+        {
+            int valor3 = Convert.ToInt32(pantalla.Text);
+            int potencia = valor3 * valor3;
+            pantalla.Text = Convert.ToString(potencia);
+        }
+
+        private void integralDiscretaToolStripMenuItem_Click(object sender, EventArgs e)
+        {
+            Form2 f = new Form2();
+            f.Show();
+        }
+
+        private void ecuacionesDeSegundoGradoToolStripMenuItem_Click(object sender, EventArgs e)
+        {
+            Form3 f2 = new Form3();
+            f2.Show();
         }
     }
 }
